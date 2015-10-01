@@ -4,6 +4,8 @@ name: KINGSMEN FILMS
 description: Where Hearts Lie is an indie film based in East New York and directed by Tony Lindsay.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://whereheartsliemovie.com" # the base hostname & protocol for your site
-
-# Build settings
+  # Build settings
 markdown: kramdown
+# Gems
+gems:
+  - jekyll-sitemap
