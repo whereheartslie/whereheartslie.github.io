@@ -5,6 +5,5 @@ description: Where Hearts Lie is an indie film based in East New York and direct
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://whereheartsliemovie.com" # the base hostname & protocol for your site
 
-
 # Build settings
 markdown: kramdown
