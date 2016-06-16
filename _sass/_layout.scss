@@ -193,10 +193,17 @@ iframe {
             font-size: 29px;
             padding: 15px;
             margin: 15px;
+
             &:hover {
                 text-decoration: none;
                 background-color:$grey-color;
             }
+
+            &:focus {
+                outline: none;
+                color: #dd7e6b;
+            }
+
             &:active {
                 text-decoration: none;
                 color: #dd7e6b;
@@ -412,10 +419,19 @@ Section Background Images
 /**
  Random styles to please the designer's demands...
 **/
+
+.badge {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .share {
     width:28px;
     margin-bottom: 6px;
 }
+
 .social-media-links {
     text-align: center;
     padding:15px;
@@ -542,81 +558,3 @@ Section Background Images
     }
 }
 
-
-
-/**
- * Unused styles that may or my not be used in the future.
- * Page content
- */
-// .page-content {
-//     padding: $spacing-unit 0;
-// }
-
-// .page-heading {
-//     font-size: 20px;
-// }
-
-// .post-list {
-//     margin-left: 0;
-//     list-style: none;
-
-//     > li {
-//         margin-bottom: $spacing-unit;
-//     }
-// }
-
-// .post-meta {
-//     font-size: $small-font-size;
-//     color: $grey-color;
-// }
-
-// .post-link {
-//     display: block;
-//     font-size: 24px;
-// }
-
-/**
- * Posts
- */
-
-// .post-header {
-//     margin-bottom: $spacing-unit;
-// }
-
-// .post-title {
-//     font-size: 42px;
-//     letter-spacing: -1px;
-//     line-height: 1;
-
-//     @include media-query($on-laptop) {
-//         font-size: 36px;
-//     }
-// }
-
-// .post-content {
-//     margin-bottom: $spacing-unit;
-
-//     h2 {
-//         font-size: 32px;
-
-//         @include media-query($on-laptop) {
-//             font-size: 28px;
-//         }
-//     }
-
-//     h3 {
-//         font-size: 26px;
-
-//         @include media-query($on-laptop) {
-//             font-size: 22px;
-//         }
-//     }
-
-//     h4 {
-//         font-size: 20px;
-
-//         @include media-query($on-laptop) {
-//             font-size: 18px;
-//         }
-//     }
-// }

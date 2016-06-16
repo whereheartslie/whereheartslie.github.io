@@ -8,10 +8,20 @@
         // ["<strong>Ocktober Film Festival</strong><br /><br/>Poet’s Den Theater & Gallery<br/> New York, NY<br/>",40.791893,-73.941332,3]
     ];
 
-    window.map=new google.maps.Map(document.getElementById("map"),{mapTypeId:google.maps.MapTypeId.ROADMAP});var o=new google.maps.InfoWindow,a=new google.maps.LatLngBounds;for(i=0;i<e.length;i++)marker=new google.maps.Marker({position:new google.maps.LatLng(e[i][1],e[i][2]),map:map}),a.extend(marker.position),google.maps.event.addListener(marker,"click",function(a,t){return function(){o.setContent(e[t][0]),o.open(map,a)}}(marker,i));map.fitBounds(a);var t=google.maps.event.addListener(map,"idle",function(){map.setZoom(12),google.maps.event.removeListener(t)})}function loadScript(){var e=document.createElement("script");e.type="text/javascript",e.src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize",document.body.appendChild(e)}window.onload=loadScript;</script>
-<!--FlexSlider-->
-<script type="text/javascript" src="{{"/bower_components/flexslider/jquery.flexslider.js" | prepend: site.baseurl }}">
+    window.map=new google.maps.Map(document.getElementById("map"),{mapTypeId:google.maps.MapTypeId.ROADMAP});var o=new google.maps.InfoWindow,a=new google.maps.LatLngBounds;for(i=0;i<e.length;i++)marker=new google.maps.Marker({position:new google.maps.LatLng(e[i][1],e[i][2]),map:map}),a.extend(marker.position),google.maps.event.addListener(marker,"click",function(a,t){return function(){o.setContent(e[t][0]),o.open(map,a)}}(marker,i));map.fitBounds(a);var t=google.maps.event.addListener(map,"idle",function(){map.setZoom(12),google.maps.event.removeListener(t)})}function loadScript(){var e=document.createElement("script");e.type="text/javascript",e.src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize",document.body.appendChild(e)}window.onload=loadScript;
 </script>
-<script type="text/javascript">$(window).load(function(){$("#carousel").flexslider({animation:"slide",controlNav:!1,animationLoop:!1,slideshow:!0,itemWidth:100,itemMargin:5,asNavFor:"#slider"}),$("#slider").flexslider({animation:"slide",controlNav:!1,animationLoop:!1,slideshow:!1,sync:"#carousel"})});</script>
+<!--FlexSlider-->
+<script type="text/javascript" src="{{"/bower_components/flexslider/jquery.flexslider.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">$(window).load(function(){$("#carousel").flexslider({animation:"slide",controlNav:!1,animationLoop:!1,slideshow:!0,itemWidth:100,itemMargin:5,asNavFor:"#slider"}),$("#slider").flexslider({animation:"slide",controlNav:!1,animationLoop:!1,slideshow:!1,sync:"#carousel"})});
+</script>
 <script type="text/javascript" src="{{ "/bower_components/fullpage.js/jquery.fullPage.min.js" | prepend: site.baseurl }}"></script>
-<script type="text/javascript">$(document).ready(function(){$("#fullpage").fullpage({loopBottom:!0,recordHistory:!1,anchors:["home","about","cast","videos","photos","press","screenings"],menu:"#menu",afterLoad:function(o,e){1==e?$(".home-box").addClass("fadeIn"):2==e&&$(".synopsis").addClass("teeth-whiten")}})});</script>
+<script type="text/javascript">$(document).ready(function(){$("#fullpage").fullpage({loopBottom:!0,recordHistory:!1,anchors:["home","about","cast","videos","photos","press","screenings"],menu:"#menu",afterLoad:function(o,e){1==e?$(".home-box").addClass("fadeIn"):2==e&&$(".synopsis").addClass("teeth-whiten")}})});
+</script>
+<!--jQuery to load modal URL-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        if(window.location.href.indexOf('#buy') != -1) {
+            $('#buy').modal('show');
+        }
+    });
+</script>
