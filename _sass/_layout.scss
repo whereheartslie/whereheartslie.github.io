@@ -420,11 +420,31 @@ Section Background Images
  Random styles to please the designer's demands...
 **/
 
-.badge {
-    img {
-        width: 100%;
-        height: auto;
-    }
+.badge-sm {
+    width: 100px;
+    height: auto;
+}
+
+.badge-md {
+    width: 125px;
+    height: auto;
+}
+
+.badge-lg {
+    width: 200px;
+    height: auto;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.pd-md-t {
+    padding-top: 15px;
+}
+
+.pd-md-b {
+    padding-bottom: 15px;
 }
 
 .share {
@@ -471,7 +491,7 @@ Section Background Images
     color: #434343;
 }
 .size-up {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
 }
 .space {
     letter-spacing: 2px;
