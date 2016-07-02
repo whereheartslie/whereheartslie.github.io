@@ -24,19 +24,14 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    1000px;
-$nav-disappear:    840px;	
+$nav-disappear:    840px;
 $on-palm:          768px;
 $on-laptop:        1000px;
 
 
 
 // Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: 0;
-//         padding-left: 0;
-//     }
-// }
+
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -48,7 +43,7 @@ $on-laptop:        1000px;
 @import
 		"normalize",
         "bootstrap",
+        "buy",
         "base",
         "layout"
-
 ;

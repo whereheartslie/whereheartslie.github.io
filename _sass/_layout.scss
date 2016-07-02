@@ -420,21 +420,6 @@ Section Background Images
  Random styles to please the designer's demands...
 **/
 
-.badge-sm {
-    width: 100px;
-    height: auto;
-}
-
-.badge-md {
-    width: 125px;
-    height: auto;
-}
-
-.badge-lg {
-    width: 200px;
-    height: auto;
-}
-
 .inline-block {
     display: inline-block;
 }
@@ -445,6 +430,10 @@ Section Background Images
 
 .pd-md-b {
     padding-bottom: 15px;
+}
+
+.pd-md {
+    padding: 15px;
 }
 
 .share {
